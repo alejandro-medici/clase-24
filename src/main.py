@@ -19,6 +19,8 @@ def main():
     myGame.player1 = myPlayer1
     myGame.player2 = myPlayer2
 
+    myPlayer1.id = 158
+
     myGame.start()
 
     print(Player.score)

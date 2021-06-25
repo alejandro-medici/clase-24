@@ -10,7 +10,17 @@ class Player:
         parametro self
         """
         self.__nombre = nombre
-        self.id = id
+        self.__id = id
+
+    @property
+    def id(self):
+        return self.__id
+
+    @id.setter
+    def id(self, id):
+        # aca podemos chequear y controlar que ID sea un parametro
+        # valido para nuestro objeto
+        self.__id = id
     
     def input(self):
         """

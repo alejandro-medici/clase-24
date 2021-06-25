@@ -2,14 +2,13 @@ from game.player import *
 from random import random
 
 class Game:
-    player1 = Player
-    player2 = Player
-
+    
     def __init__(self) -> None:
         """
         Solo el constructor
         """
-        pass
+        self.__player1 = None
+        self.__player2 = None
     
     def __str__(self) -> str:
         return f"Esto es el objeto Game"
