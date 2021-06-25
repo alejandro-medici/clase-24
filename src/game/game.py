@@ -10,6 +10,14 @@ class Game:
         self.__player1 = None
         self.__player2 = None
     
+    @property
+    def player1(self):
+        return self.__player1
+
+    @player1.setter
+    def player1(self, player1):
+        self.__player1 = player1
+
     def __str__(self) -> str:
         return f"Esto es el objeto Game"
     
